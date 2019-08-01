@@ -20,3 +20,8 @@ spring:
       max-total: 5                                            # 最大连接数
       max-wait-millis: 200                                    # 等待连接获取的最大超时时间
       min-idle: 5                                             # 数据库连接池的最小维持连接数
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka

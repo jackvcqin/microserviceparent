@@ -11,6 +11,7 @@
         <module>microservice-com</module>
         <module>microservice-provider</module>
         <module>microservice-consumer</module>
+        <module>microservice-eurake1</module>
     </modules>
     <packaging>pom</packaging>
 
