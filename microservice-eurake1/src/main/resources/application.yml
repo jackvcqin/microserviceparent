@@ -2,8 +2,8 @@ eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false   #是否向Eureka注册服务，该应用为服务注册中心，不需要注册，设置为false
+    fetch-registry: false         #是否检索服务，该应用为注册服务中心，职责为注册和发现服务，无需检索服务，设置为false
     service-url:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/

@@ -10,7 +10,8 @@ import com.lzj.springcloud.entity.User;
 @RestController
 public class UserConsumerController {
 
-    private static String REST_URL_PREFIX = "http://localhost:8002";
+//    private static String REST_URL_PREFIX = "http://localhost:8002";
+    private static String REST_URL_PREFIX = "http://MICROSERVICECLOUD-PROVIDER";
 
     @Autowired
     private RestTemplate restTemplate;
