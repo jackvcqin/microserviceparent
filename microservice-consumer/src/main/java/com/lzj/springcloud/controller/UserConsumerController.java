@@ -23,8 +23,8 @@ public class UserConsumerController {
     }
 
     @RequestMapping(value="/consumer/get/{id}")
-    public User get(@PathVariable("id") int id){
-        User user = restTemplate.getForObject(REST_URL_PREFIX + "/get" + "/id", User.class);
+    public User get(@PathVariable("id") Integer id){
+        User user = restTemplate.getForObject(REST_URL_PREFIX + "/get" + "/" + id, User.class);
         return user;
     }
 
