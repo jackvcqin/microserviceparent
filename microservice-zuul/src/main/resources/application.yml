@@ -1,0 +1,16 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: microservice-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9001.com:9001/eureka/
+
+zuul:
+  routes:
+    mydept.serviceId: microservice-provider
+    mydept.path: /provider/*
